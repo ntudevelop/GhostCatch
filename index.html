@@ -11,26 +11,20 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #0d1117;
       color: #e6edf3;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
       padding: 20px;
-      border-bottom: 1px solid #30363d;
       text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
+      border-bottom: 1px solid #30363d;
     }
 
     nav a {
+      margin: 0 15px;
       color: #58a6ff;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -54,7 +48,11 @@
     hr {
       border: none;
       border-top: 1px solid #30363d;
-      margin: 40px 0;
+      margin: 50px 0;
+    }
+
+    ul {
+      margin-top: 10px;
     }
 
     table {
@@ -66,14 +64,13 @@
     th, td {
       border: 1px solid #30363d;
       padding: 10px;
-      text-align: left;
     }
 
     th {
       background: #161b22;
     }
 
-    .highlight {
+    .box {
       background: #161b22;
       padding: 15px;
       border-radius: 8px;
@@ -87,58 +84,147 @@
 <header>
   <h1>GhostCatch 👻</h1>
   <nav>
-    <a href="#privacy">Privacy Policy</a>
     <a href="#terms">Terms of Service</a>
+    <a href="#privacy">Privacy Policy</a>
   </nav>
 </header>
 
 <div class="container">
 
-  <!-- PRIVACY POLICY -->
+  <!-- TERMS -->
+  <section id="terms">
+    <h1>Terms of Service</h1>
+    <p><strong>Last Updated:</strong> March 31, 2026</p>
+    <p><strong>Product:</strong> GhostCatch (the "App")</p>
+
+    <h2>1. Agreement to Terms</h2>
+    <p>By downloading, installing, or using GhostCatch, you enter into a legally binding agreement with us. If you do not agree to these Terms, you must immediately cease use of the App and delete it from your device.</p>
+
+    <h2>2. Service Description</h2>
+    <p>GhostCatch is a management tool for recurring subscriptions. Key features include:</p>
+    <ul>
+      <li>Manual Entry & OCR: Tracking via manual input or on-device image scanning.</li>
+      <li>Analytics: Local visualization of spending habits.</li>
+      <li>Notifications: Local reminders for upcoming renewals.</li>
+    </ul>
+
+    <h2>3. Account & Data Responsibility</h2>
+    <p><strong>No Central Accounts:</strong> GhostCatch does not require an account. All data exists solely on your device.</p>
+    <p><strong>Security:</strong> You are exclusively responsible for the physical security of your device and the data contained within the App. We cannot recover lost data if the App is deleted or the device is lost.</p>
+
+    <h2>4. Premium Subscriptions</h2>
+    <p>GhostCatch offers a Premium tier via In-App Purchase (IAP).</p>
+
+    <h3>A. Billing & Renewal</h3>
+    <ul>
+      <li>Processors: All transactions are handled by the Apple App Store or Google Play Store.</li>
+      <li>Auto-Renewal: Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</li>
+      <li>Trials: One free trial per platform account. You will be billed immediately following the trial expiration unless cancelled.</li>
+    </ul>
+
+    <h3>B. Cancellations & Refunds</h3>
+    <ul>
+      <li>Management: You must manage your subscription through your device’s system settings (Apple ID/Google Account).</li>
+      <li>Refunds: GhostCatch cannot process refunds. All refund requests must be directed to the respective App Store.</li>
+    </ul>
+
+    <h2>5. Usage Guidelines & OCR Accuracy</h2>
+    <ul>
+      <li>Lawful Use: You agree to use the App only for its intended purpose and in compliance with local laws.</li>
+      <li>OCR Disclaimer: Our Optical Character Recognition (OCR) is a "best-effort" tool. It may misread text. Always verify the accuracy of scanned data. GhostCatch is not liable for financial losses resulting from inaccurate data extraction.</li>
+      <li>Prohibitions: You may not reverse engineer, decompile, or attempt to extract the source code of the App.</li>
+    </ul>
+
+    <h2>6. Intellectual Property</h2>
+    <ul>
+      <li>Our Rights: The GhostCatch name, logo, code, and design are the exclusive property of GhostCatch.</li>
+      <li>Your Rights: You retain 100% ownership of the data you enter. We claim no rights over your subscription information.</li>
+    </ul>
+
+    <h2>7. Disclaimers & Limitation of Liability</h2>
+    <p><strong>"AS IS" WARRANTY</strong></p>
+    <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. WE DO NOT GUARANTEE THAT THE APP WILL BE ERROR-FREE, UNINTERRUPTED, OR THAT NOTIFICATIONS WILL ALWAYS BE DELIVERED ON TIME.</p>
+
+    <p><strong>Limitation of Liability</strong></p>
+    <ul>
+      <li>Indirect, incidental, or consequential damages.</li>
+      <li>Financial losses (e.g., missed cancellations or unwanted renewals).</li>
+      <li>Loss of data due to hardware failure or app deletion.</li>
+    </ul>
+    <p>Our total liability is limited to the amount paid by you for the App in the 12 months preceding the claim.</p>
+
+    <h2>8. Dispute Resolution</h2>
+    <ul>
+      <li>Governing Law: These terms are governed by the laws of our operating jurisdiction.</li>
+      <li>Arbitration: You agree to resolve disputes via binding arbitration rather than in court.</li>
+      <li>Class Action Waiver: You agree to bring claims only on an individual basis and waive the right to participate in a class-action lawsuit.</li>
+    </ul>
+
+    <h2>9. Contact</h2>
+    <p>Email: ntu.develop@gmail.com</p>
+
+    <h2>10. Quick Reference Summary</h2>
+    <table>
+      <tr>
+        <th>Topic</th>
+        <th>The "Bottom Line"</th>
+      </tr>
+      <tr>
+        <td>Data Ownership</td>
+        <td>It’s yours. It stays on your phone. We can't see it.</td>
+      </tr>
+      <tr>
+        <td>Payment</td>
+        <td>Handled by Apple/Google. We cannot issue refunds.</td>
+      </tr>
+      <tr>
+        <td>Accuracy</td>
+        <td>OCR isn't perfect. Check your data after scanning.</td>
+      </tr>
+      <tr>
+        <td>Reminders</td>
+        <td>Delivered locally. Check your battery/system settings to ensure delivery.</td>
+      </tr>
+      <tr>
+        <td>Updates</td>
+        <td>Using the App after a policy change counts as your acceptance.</td>
+      </tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- PRIVACY -->
   <section id="privacy">
     <h1>Privacy Policy</h1>
     <p><strong>Effective Date:</strong> March 31, 2026</p>
+    <p><strong>Entity:</strong> GhostCatch ("we," "our," or "us")</p>
 
     <h2>1. At a Glance</h2>
-    <div class="highlight">
-      <p><strong>Data Minimization:</strong> Your financial habits are your business.</p>
+    <div class="box">
+      <p>GhostCatch is built on the principle of Data Minimization. We believe your financial habits are your business.</p>
       <ul>
-        <li><strong>Zero-Knowledge:</strong> Data stays on your device</li>
-        <li><strong>No Servers:</strong> We don’t store your subscription lists</li>
-        <li><strong>On-Device Processing:</strong> OCR never uploads images</li>
+        <li>Zero-Knowledge Architecture: Your subscription data is stored locally on your device.</li>
+        <li>No Central Servers: We do not host databases containing your personal subscription lists.</li>
+        <li>On-Device Processing: Features like OCR happen locally; images are never uploaded.</li>
       </ul>
     </div>
 
     <h2>2. Information Collection</h2>
+
     <h3>A. Data You Manage</h3>
     <ul>
-      <li>Subscription details</li>
-      <li>Preferences & reminders</li>
-      <li>Receipts (OCR)</li>
+      <li>Subscription Details: Names, costs, renewal dates, categories.</li>
+      <li>Customization: Reminders, categories, preferences.</li>
+      <li>Media: Receipts/screenshots scanned via OCR.</li>
     </ul>
 
-    <h3>B. Functional Data</h3>
+    <h3>B. Data We Process</h3>
     <table>
-      <tr>
-        <th>Category</th>
-        <th>Purpose</th>
-        <th>Data</th>
-      </tr>
-      <tr>
-        <td>Purchases</td>
-        <td>Validate Premium</td>
-        <td>Transaction IDs</td>
-      </tr>
-      <tr>
-        <td>Stability</td>
-        <td>Fix bugs</td>
-        <td>Crash logs (opt-in)</td>
-      </tr>
-      <tr>
-        <td>Analytics</td>
-        <td>Compatibility</td>
-        <td>Device + OS version</td>
-      </tr>
+      <tr><th>Category</th><th>Purpose</th><th>Data Type</th></tr>
+      <tr><td>Purchases</td><td>Validate Premium</td><td>Transaction IDs</td></tr>
+      <tr><td>Stability</td><td>Fix bugs</td><td>Crash logs (opt-in)</td></tr>
+      <tr><td>Analytics</td><td>Compatibility</td><td>Device + OS + App version</td></tr>
     </table>
 
     <h2>3. Third Parties</h2>
@@ -151,7 +237,7 @@
     <ul>
       <li>Encrypted local storage</li>
       <li>No cloud sync</li>
-      <li>Manual export (CSV/JSON)</li>
+      <li>Manual export supported</li>
     </ul>
 
     <h2>5. Your Rights</h2>
@@ -161,78 +247,20 @@
       <li>No cross-app tracking</li>
     </ul>
 
-    <h2>6. Contact</h2>
+    <h2>6. International & Children</h2>
+    <p>We do not collect data from children under 13. Data remains on your device globally.</p>
+
+    <h2>7. Contact</h2>
     <p>ntu.develop@gmail.com</p>
 
-    <h2>7. Summary</h2>
+    <h2>8. Summary</h2>
     <table>
-      <tr>
-        <th>We Collect</th>
-        <th>We Never Collect</th>
-      </tr>
-      <tr>
-        <td>Subscription status</td>
-        <td>Name / Email</td>
-      </tr>
-      <tr>
-        <td>Crash reports</td>
-        <td>Location</td>
-      </tr>
-      <tr>
-        <td>Device info</td>
-        <td>Bank details</td>
-      </tr>
-      <tr>
-        <td>Preferences</td>
-        <td>Subscription list</td>
-      </tr>
+      <tr><th>We Collect</th><th>We NEVER Collect</th></tr>
+      <tr><td>Subscription status</td><td>Name / Email</td></tr>
+      <tr><td>Crash reports</td><td>Location</td></tr>
+      <tr><td>Device info</td><td>Bank details</td></tr>
+      <tr><td>Preferences</td><td>Subscription list</td></tr>
     </table>
-  </section>
-
-  <hr>
-
-  <!-- TERMS -->
-  <section id="terms">
-    <h1>Terms of Service</h1>
-    <p><strong>Last Updated:</strong> March 31, 2026</p>
-
-    <h2>1. Agreement</h2>
-    <p>By using GhostCatch, you agree to these terms.</p>
-
-    <h2>2. Service</h2>
-    <ul>
-      <li>Subscription tracking</li>
-      <li>OCR scanning</li>
-      <li>Spending analytics</li>
-      <li>Reminders</li>
-    </ul>
-
-    <h2>3. Data Responsibility</h2>
-    <p>All data is stored locally. You are responsible for your device.</p>
-
-    <h2>4. Premium</h2>
-    <ul>
-      <li>Handled via Apple / Google</li>
-      <li>Auto-renews unless cancelled</li>
-      <li>Refunds handled by app stores</li>
-    </ul>
-
-    <h2>5. Usage Rules</h2>
-    <ul>
-      <li>Use lawfully</li>
-      <li>OCR may be inaccurate</li>
-      <li>No reverse engineering</li>
-    </ul>
-
-    <h2>6. Ownership</h2>
-    <ul>
-      <li>We own the app</li>
-      <li>You own your data</li>
-    </ul>
-
-    <h2>7. Disclaimer</h2>
-    <p><strong>THE APP IS PROVIDED "AS IS".</strong></p>
-    <p>We are not liable for financial loss or service interruptions.</p>
   </section>
 
 </div>
